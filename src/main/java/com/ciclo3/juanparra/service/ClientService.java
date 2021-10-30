@@ -51,7 +51,7 @@ public class ClientService {
                     consulta.get().setPassword(clt.getPassword());
                 }
                 if(clt.getEmail()!=null){
-                    consulta.get().setPassword(clt.getEmail());
+                    consulta.get().setEmail(clt.getEmail());
                 }
                 clientRepository.save(consulta.get());
                 return consulta.get();
